@@ -154,3 +154,20 @@
     margin-top: -16px;
  
 }
+
+/* ============= */
+@media (max-width: 412px){
+    .login{
+        width: 908px;
+    }
+    .login__bg {
+        margin: 142px;
+    }
+    .login__form1 {
+        margin-left: 270px;
+    }
+
+
+}
+
+
