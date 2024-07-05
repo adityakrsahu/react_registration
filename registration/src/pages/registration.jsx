@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/index.css'
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaUser,FaLock } from "react-icons/fa";
 import { IoMdCall } from "react-icons/io";
 
@@ -41,7 +41,8 @@ function Registration() {
            </div>
            <button type="submit"  className="login__button">Register</button>
            <div className="login__register">
-              Don't have an login?
+             Don't have an login? <NavLink to='/'>Login Page</NavLink>
+
             </div>
         </div>
         
