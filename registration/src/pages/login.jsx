@@ -8,7 +8,7 @@ function Login() {
     <>
       <div className="login">
       <img className="login__bg" src="https://raw.githubusercontent.com/bedimcode/animated-login-form/1b0a04c9d3f47258bd1da07550571c23fadd1327/assets/img/login-bg.png" alt="" />
-        <form action=""  onSubmit={submit} className="login__form">
+        <form action="" className="login__form">
            <h1 className="login__title">Login</h1>
 
            <div className="login__inputs">
@@ -34,7 +34,7 @@ function Login() {
               <NavLink  to="/" className="login__forgot">Forgot Password?</NavLink>
            </div>
 
-           <button type="submit" onClick={loggedin} className="login__button">Login</button>
+           <button type="submit" className="login__button">Login</button>
 
            <div className="login__register">
               Don't have an account? <NavLink to='/registration'>Register</NavLink>
