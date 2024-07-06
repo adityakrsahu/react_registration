@@ -3,7 +3,7 @@
     height: 100vh;
     display: grid;
     align-items: center;
-    background-color: rgb(68, 12, 197);
+    background-color: #2d2d2d;
   }
   
   .login__bg {
@@ -22,17 +22,18 @@
       width: 400px;
       position: relative;
       margin-inline: 29.5rem;
-      background-color: hsla(0, 0%, 100%, .01);
+      background-color: #fefefe;
       border: 2px solid hsla(0, 0%, 100%, .7);
       padding: 2.5rem 1rem;
       border-radius: 1rem;
       color: var(--white-color);
-      backdrop-filter: blur(16px);
+      margin-left: 550px;
+      /* backdrop-filter: blur(16px); */
   }
-  
+    
   .login__title {
       text-align: center;
-      color: white;
+      color: black;
    
   }
   
@@ -50,10 +51,10 @@
     grid-template-columns: 1fr max-content;
     column-gap: .75rem;
     align-items: center;
-    border: 2px solid hsla(0, 0%, 100%, .7);
+    border: 2px solid black;
     padding-inline: 1.25rem;
     border-radius: 4rem;
-    color: white;
+    color: black;
   }
   
   .login__input, 
@@ -73,7 +74,7 @@
     color: var(--white-color);
   }
   .icon{
-    color: #f0f0f0;
+    color: black;
   }
   .login__box i {
     font-size: 1.25rem;
@@ -84,7 +85,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: black;
   }
   
   .login__check {
@@ -122,7 +123,7 @@
   .login__register {
     font-size: var(--small-font-size);
     text-align: center;
-    color: white;
+    color: black;
   }
   
   .login__register a {
@@ -140,17 +141,18 @@
     height: 476px;
     position: relative;
     margin-inline: 29.5rem;
-    background-color: hsla(0, 0%, 100%, .01);
+    background-color: #fefefe;
+    /* background-color: hsl(0, 0%, 100%); */
     border: 2px solid hsla(0, 0%, 100%, .7);
     padding: 2.5rem 1rem;
     border-radius: 1rem;
     color: var(--white-color);
-    backdrop-filter: blur(16px);
+    margin-left: 550px;
 }
 
 .login__title1 {
     text-align: center;
-    color: white;
+    color: black;
     margin-top: -16px;
  
 }

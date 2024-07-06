@@ -7,7 +7,7 @@ function Login() {
   return (
     <>
       <div className="login">
-      <img className="login__bg" src="https://raw.githubusercontent.com/bedimcode/animated-login-form/1b0a04c9d3f47258bd1da07550571c23fadd1327/assets/img/login-bg.png" alt="" />
+      {/* <img className="login__bg" src="https://raw.githubusercontent.com/bedimcode/animated-login-form/1b0a04c9d3f47258bd1da07550571c23fadd1327/assets/img/login-bg.png" alt="" /> */}
         <form action="" className="login__form">
            <h1 className="login__title">Login</h1>
 
