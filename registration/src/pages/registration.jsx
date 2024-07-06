@@ -7,7 +7,7 @@ import axios from 'axios';
 
 function Registration() {
 
-  const [register_input, SetRegisterInput] = useState({})
+  const [register_input, SetRegisterInput] = useState({});
 
 
   const handleInput=(e)=>{
@@ -17,11 +17,12 @@ function Registration() {
     }
 
   const handleSubmit=()=>{
-    let url="http://127.0.0.1:8000/CustomerList/";
-
+        console.log(register_input);
+        const url = `http://127.0.0.1:8000/CustomerList/`;
         axios.post(url,register_input).then((response)=>{
-            alert("data added successfully")
+            alert("Registration successfully");
         })
+        
   }
 
   return (
@@ -33,21 +34,21 @@ function Registration() {
 
            <div className="login__inputs">
               <div className="login__box">
-                <input type="text" placeholder="Name" name='name' onChange={handleInput} required className="login__input"/>
+                <input type="text" placeholder="Name" name="name" onChange={handleInput} required className="login__input"/>
                 <FaUser className='icon' />
               </div>
               <div className="login__box">
-                <input type="tex" placeholder="Mobile" name='mobile' onChange={handleInput} required className="login__input"/>
+                <input type="tex" placeholder="Mobile" name="phone" onChange={handleInput} required className="login__input"/>
                 <IoMdCall className='icon' />
               </div>
 
               <div className="login__box">
-                <input type="email" placeholder="Email ID" name='email' onChange={handleInput}   required className="login__input"/>
+                <input type="email" placeholder="Email ID" name="email" onChange={handleInput}   required className="login__input"/>
                 <i className="ri-mail-fill"></i>
               </div>
 
               <div className="login__box">
-                 <input type="password" placeholder="Password" name='password' onChange={handleInput}  required className="login__input"/>
+                 <input type="password" placeholder="Password" name="password" onChange={handleInput}  required className="login__input"/>
                  <FaLock className='icon' />
               </div>
            </div>
