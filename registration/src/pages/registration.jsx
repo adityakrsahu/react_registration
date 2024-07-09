@@ -12,8 +12,18 @@ function Registration() {
 
   const handleInput=(e)=>{
         let name=e.target.name;
+        let email = e.target.email;
+        let phone = e.target.phone;
+        let password = e.target.password;
+
+        
         let value=e.target.value;
-        SetRegisterInput(values=>({...values,[name]:value}));
+        SetRegisterInput(values=>({...values,
+          [name]:value,
+          [email]:value,
+          [phone]:value,
+          [password]:value
+        }));
     }
 
   const handleSubmit=()=>{
